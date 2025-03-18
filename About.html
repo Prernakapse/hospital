@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Hospital Management System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+
+<style>
+        .banner {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/Okayama_Red_Cross_Hospital.jpg') center/cover;
+            height: 520px;
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-top: 120px;
+        }
+
+        .banner h1{
+            color:black;
+            font-size:30px;
+            margin-top:40px;
+        }
+    </style>
+
+
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+
+
+    .navbar {
+        background: linear-gradient(135deg, #f5f7f8, #1e90ed); 
+        justify-content: center;
+position: fixed !important;
+top:20px;
+left: 0;
+width: 100%;
+z-index: 3; 
+box-shadow: 2px 3px 5px grey;
+padding: 10px 20px;
+font-size: 16px;
+}
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: black;
+    }
+        
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color:blue;
+        text-decoration:underline;
+    }
+
+    .col-auto img{
+       position: absolute;
+       display:inline-block;
+       z-index:4;
+       top:-5px;
+       position: fixed;
+    }
+
+
+</style>
+
+<!-- Navigation Bar -->
+
+<section class="container">
+<section class="home" id="home">
+    <div class="container-fluid p-3">
+        <div class="row align-items-center">
+            <!-- Logo -->
+            <div class="col-auto display-inline">
+                <img src="./Images/hospital.png" alt="Logo" class="img-fluid" style="width:135px; height: 120px;">
+            </div>
+
+            <!-- Navbar -->
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-dark fw-normal justify-content-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav p-2 w-100 justify-content-center gap-4">
+                            <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="About.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Doctors.html">Doctors</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Appointment.html">Appointment</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+
+
+    <div class="banner">
+        <h1>About Our Hospital Management System</h1>
+    </div>
+
+    <div class="container section-padding">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>WHO WE ARE ?</h2>
+                <p class="para">In today’s fast-paced healthcare environment, efficiency, accuracy, and seamless coordination are essential 
+                    for delivering high-quality patient care. Our Hospital Management System (HMS) is a powerful, all-in-one
+                    solution designed to streamline hospital operations and enhance the overall healthcare experience for 
+                    patients, doctors, and administrative staff. <br>
+
+                    By leveraging cutting-edge technology, our system automates essential processes, reduces manual workload,
+                    and improves hospital workflow efficiency. Whether managing patient records, scheduling appointments, or
+                    handling billing and inventory, our HMS ensures smooth, hassle-free operations.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/c1c17f74450999.5ccac7feeac74.jpg" class="img-fluid rounded" alt="Hospital Management">
+            </div>
+        </div>
+    </div>
+
+
+
+<style>
+    /* Awards Section Styling */
+    .awards-section {
+        background: #f8f9fa;
+        padding: 60px 0;
+    }
+
+    .awards-section h2 {
+        color: #003366;
+        margin-bottom: 30px;
+    }
+
+    .award-card {
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: 0.3s ease-in-out;
+    }
+
+    .award-card:hover {
+        transform: scale(1.05);
+    }
+
+    .award-icon {
+        font-size: 2.5rem;
+        color: #FFD700;
+        margin-bottom: 15px;
+    }
+
+    .award-text {
+        font-size: 1.2rem;
+    }
+</style>
+
+
+<section class="awards-section text-center" style="background: linear-gradient( #eff2f3, #6db3ec);">
+<div class="container">
+    <h2 class="fw-bold">🏆 Hospital Awards & Recognitions</h2>
+    <p class="fs-5 text-black">Celebrating excellence in healthcare and patient care.</p>
+
+    <div class="row mt-4">
+        <div class="col-md-4 mb-3">
+            <div class="award-card p-4 text-center bg-white">
+                <i class="fas fa-trophy award-icon"></i>
+                <p class="fw-bold">Best Pediatrician of 2024</p>
+                <p class="award-text">Dr. Rakesh Nair was honored for outstanding pediatric care.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="award-card p-4 text-center bg-white">
+                <i class="fas fa-medal award-icon"></i>
+                <p class="fw-bold">Top Cardiologist Award</p>
+                <p class="award-text">Dr. Rajesh Sharma received the award for excellence in cardiology.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="award-card p-4 text-center bg-white">
+                <i class="fas fa-star award-icon"></i>
+                <p class="fw-bold">Best Multi-Specialty Hospital</p>
+                <p class="award-text">Medical Care Hospital recognized for exceptional patient care in 2023.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<style>
+    /* Testimonials Section Styling */
+    .testimonials-section {
+        background: linear-gradient( #eff2f3, #6db3ec);
+        padding: 60px 0;
+    }
+
+    .testimonials-section h2 {
+        color: #003366; 
+        margin-bottom: 30px;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        transition: 0.3s ease-in-out;
+    }
+
+    .testimonial-card:hover {
+        transform: scale(1.03);
+    }
+
+    .testimonial-icon {
+        font-size: 2.5rem;
+        color: #003366;
+    }
+
+    .star-rating {
+        color: #FFD700;
+        font-size: 1.2rem;
+    }
+
+    .testimonial-text {
+        font-size: 1rem;
+        color: #333;
+    }
+</style>
+
+
+
+    <style>
+  .section-padding {
+            padding: 60px 0;
+        }
+
+        .team img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+  
+
+        .row h2{
+            color:#00008b;
+            text-align:center;
+            margin-top: 30px;
+        }
+
+        .para{
+            text-align: justify;
+        }
+
+    </style>
+
+
+
+    <div class="container section-padding text-center">
+        <h2>Meet Our Team</h2>
+        <div class="row team">
+            <div class="col-md-4">
+                <img src="https://t3.ftcdn.net/jpg/02/68/56/00/360_F_268560006_F2fIixDnlVRNGwCyne9EMQJhaAxalKTq.jpg" alt="Doctor">
+                <h5>Dr. Manish Malhotra</h5>
+                <p>Chief Medical Officer</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg" alt="Admin">
+                <h5>Rohan Mehra</h5>
+                <p>Hospital Administrator</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://t4.ftcdn.net/jpg/02/44/80/33/360_F_244803369_cNviClISSSUV5FGcYsJR9anLrqiRrHVK.jpg" alt="IT Specialist">
+                <h5>Karan Sharma</h5>
+                <p>IT Director</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+    
+
+
+<section class="testimonials-section text-center">
+<div class="container">
+    <h2 class="fw-bold">🩺 What Our Patients Say</h2>
+    <p class="fs-5 text-black">Real experiences from patients who have consulted our expert doctors.</p>
+
+    <div class="row mt-4 text-center">
+        <div class="col-md-3 mb-3">
+            <div class="testimonial-card p-4 bg-white ">
+                <i class="fas fa-user-md testimonial-icon"></i>
+                <p class="fw-bold mt-3">Dr. Sneha Kulkarni - Gynecologist</p>
+                <p class="testimonial-text">"Dr. Sneha Kulkarni is amazing! She diagnosed my issue quickly and explained everything in detail."</p>
+                <p class="star-rating">⭐⭐⭐⭐⭐</p>
+                <h6>- Amit S.</h6>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="testimonial-card p-4 bg-white ">
+                <i class="fas fa-user-md testimonial-icon"></i>
+                <p class="fw-bold mt-3">Dr. Rajesh Sharma - Cardiologist</p>
+                <p class="testimonial-text">"Dr. Rajesh is very knowledgeable and caring. He provided the best treatment for my heart condition."</p>
+                <p class="star-rating">⭐⭐⭐⭐⭐</p>
+                <h6>- Neha K.</h6>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="testimonial-card p-4 bg-white ">
+                <i class="fas fa-user-md testimonial-icon"></i>
+                <p class="fw-bold mt-3">Dr. Priya Iyer - Neurologist</p>
+                <p class="testimonial-text">"Dr. Priya was extremely patient and listened to all my concerns. Highly recommended!"</p>
+                <p class="star-rating">⭐⭐⭐⭐⭐</p>
+                <h6>- Rahul M.</h6>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="testimonial-card p-4 bg-white ">
+                <i class="fas fa-user-md testimonial-icon"></i>
+                <p class="fw-bold mt-3">Dr. Anil Mehta - Orthopedic</p>
+                <p class="testimonial-text">"Dr. Anil helped me recover from a knee injury quickly. His treatment was very effective!"</p>
+                <p class="star-rating">⭐⭐⭐⭐⭐</p>
+                <h6>- Sunita P.</h6>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<style>
+    /* Services Section Styling */
+    .services-section {
+        background-color: #f8f9fa;
+        padding: 50px 0;
+    }
+
+    .service-box {
+        padding: 20px;
+    }
+
+    .service-icon {
+        font-size: 30px;
+        color: #0056b3;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    p {
+        font-size: 0.95rem;
+        color: #666;
+    }
+</style>
+
+
+
+<section class="services-section">
+<div class="container">
+    <h2 class="text-center text-primary mb-4">Our Features</h2>
+    <div class="row text-center">
+        <div class="col-md-4 col-sm-6">
+            <div class="service-box">
+                <span class="service-icon">🩺</span>
+                <h4>General Checkups</h4>
+                <p>Routine health screenings and wellness exams.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="service-box">
+                <span class="service-icon">🏥</span>
+                <h4>Emergency & Trauma Care</h4>
+                <p>24/7 emergency response and ambulance services.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="service-box">
+                <span class="service-icon">💉</span>
+                <h4>Specialized Treatments</h4>
+                <p>Cardiology, Orthopedics, Neurology, Oncology, and more.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="service-box">
+                <span class="service-icon">🔬</span>
+                <h4>Advanced Diagnostics</h4>
+                <p>Testing facilities including MRI, CT scans, and pathology.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="service-box">
+                <span class="service-icon">🧑‍⚕️</span>
+                <h4>Expert Consultation</h4>
+                <p>Personalized healthcare plans from specialists.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="service-box">
+                <span class="service-icon">📌</span>
+                <h4>Administrative Services</h4>
+                <p>Patient records, appointment management, and billing.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+ 
+<style>
+    .footer {
+        background: linear-gradient(135deg, #eff2f3, #6db3ec);
+        color: black;
+        padding: 20px 0;
+        width:100%;
+    }
+
+    .footer a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+        font-size: 20px;
+    }
+
+     .social-icons a:hover {
+        color: #004080 !important; 
+    }
+</style>
+
+<footer class="footer text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 text-black">
+                <h5>About Us</h5>
+                <p class="text-black">Providing quality healthcare with advanced facilities and experienced staff.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Doctors.html">Doctors</a></li>
+                    <li><a href="Appointment.html">Appointment</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Contact Us</h5>
+                <p class="text-black">Email: medicalcare@hospital.com</p>
+                <p class="text-black">Phone: +123 456 7890</p>
+                <p class="text-black">Address: MedicalCare Hospital, 123 Green Ave, Near Central Mall, New Delhi - 110001, India.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Follow Us</h5>
+                <div class="social-icons text-black">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-3" style="border-color: black;">
+        <p class="mb-0">&copy; 2025 Hospital Management System. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

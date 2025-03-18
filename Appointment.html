@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        .navbar {
+    background: linear-gradient(135deg, #f5f7f8, #1e90ed); 
+    justify-content: center;
+    position: fixed !important;
+    top:20px;
+    left: 0;
+    width: 100%;
+    z-index: 3; 
+    box-shadow: 2px 3px 5px grey;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: black;
+        }
+            
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color:blue;
+            text-decoration:underline;
+        }
+
+        .col-auto img{
+           position: absolute;
+           display:inline-block;
+           z-index:4;
+           top:-5px;
+           position: fixed;
+        }
+
+
+</style>
+
+    <!-- Navigation Bar -->
+
+    <section class="container">
+    <section class="home" id="home">
+        <div class="container-fluid p-3">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-auto display-inline">
+                    <img src="./Images/hospital.png" alt="Logo" class="img-fluid" style="width:135px; height: 120px;">
+                </div>
+
+                <!-- Navbar -->
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg navbar-dark fw-normal justify-content-center">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav p-2 w-100 justify-content-center gap-4">
+                                <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="About.html">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Doctors.html">Doctors</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Appointment.html">Appointment</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+    <style>
+        .custom-container {
+            background: linear-gradient(135deg, #eff2f3, #6db3ec);
+            padding:80px;
+            border-radius: 15px; 
+            text-align: center; 
+            color: rgb(20, 20, 72); 
+            font-family: 'Poppins', sans-serif; 
+            margin-top: 100px;
+        }
+
+        .custom-container h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .custom-container p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        /* Subtle hover animation */
+        .custom-container:hover {
+            transform: scale(1.02);
+            transition: 0.3s ease-in-out;
+        }
+
+        .custom-label {
+            font-weight: 500;
+        }
+    </style>
+
+
+<div class="custom-container mt-5" style="margin-top: 100px !important;">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+            <div class="booking-box">
+                <h2 class="fw-bold">Book Your Health Checkup Now! 🏥</h2>
+                <p>
+                    Your well-being is our top priority. Schedule an appointment with our expert doctors effortlessly  
+                    and take a step toward a healthier life. Quick, easy, and hassle-free!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .appointment-form {
+         transition: 0.3s;
+     }
+ 
+     .appointment-form:hover {
+         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+     }
+
+     .appointment {
+         padding: 50px 0;
+     }
+     .appointment h1 {
+         text-align: center;
+         margin-bottom: 30px;
+     }
+     .appoint img {
+         width: 100%;
+         border-radius: 10px;
+         margin-top:100px;
+         margin-left:100px;
+     }
+
+     .form-container {
+         background: #f8f9fa;
+         padding: 30px;
+         border-radius: 10px;
+         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+     }
+ </style>
+
+
+    <section class="appointment" id="appoint">
+        <h1>APPOINTMENT FORM</h1>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-6 mb-4">
+                    <div class="appoint">
+                        <img src="https://www.motherhoodindia.com/wp-content/uploads/2021/09/Contact-page-Book-an-Appointment_Mobile-banner_578X364-px-02.jpg" alt="Appointment Image">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6">
+                  <div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10">
+        <div class="card p-4 appointment-form">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your name" required>
+                </div>
+            
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Age</label>
+                        <input type="number" class="form-control" placeholder="Enter your age" required>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Gender</label>
+                        <select class="form-control" required>
+                            <option value="">Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Blood Group</label>
+                        <select class="form-control" required>
+                            <option value="">Select Blood Group</option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                        </select>
+                    </div>
+                </div>
+            
+            
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Which Disease to Diagnose?</label>
+                        <input type="text" class="form-control" placeholder="Enter disease to diagnose" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Select Doctor</label>
+                        <select class="form-control">
+                            <option>Select a Doctor</option>
+                            <option>Dr. Rajesh Sharma - Cardiologist</option>
+                            <option>Dr. Priya Iyer - Neurologist</option>
+                            <option>Dr. Anil Mehta - Orthopedic</option>
+                            <option>Dr. Suman Verma - Dermatologist</option>
+                            <option>Dr. Rakesh Nair - Pediatrician</option>
+                            <option>Dr. Sneha Kulkarni - Gynecologist</option>
+                            <option>Dr. Arvind Rao - Ophthalmologist</option>
+                            <option>Dr. Neha Bansal - ENT Specialist</option>
+                            <option>Dr. Vikram Choudhary - Psychiatrist</option>
+                            <option>Dr. Manisha Patil - Endocrinologist</option>
+                            <option>Dr. Sanjay Gupta - Gastroenterologist</option>
+                            <option>Dr. Pooja Desai - Oncologist</option>
+                            <option>Dr. Kunal Reddy - Pulmonologist</option>
+                            <option>Dr. Aarti Joshi - Nephrologist</option>
+                            <option>Dr. Prakash Yadav - Rheumatologist</option>
+                            <option>Dr. Swati Singh - Urologist</option>
+                            <option>Dr. Harish Menon - Radiologist</option>
+                            <option>Dr. Deepak Pandey - Anesthesiologist</option>
+                            <option>Dr. Kavita Sinha - General Physician</option>
+                        </select>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Appointment Date</label>
+                        <input type="date" class="form-control" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Appointment Time</label>
+                        <input type="time" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Any Allergy Message</label>
+                    <textarea class="form-control" rows="3" placeholder="Mention any allergies if applicable"></textarea>
+                </div>
+            
+                <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
+            </form>
+            
+            
+        </div>
+    </div>
+</div>
+</section>
+
+
+<style>
+    .testimonials {
+        background: linear-gradient(135deg, #eff2f3, #6db3ec);
+        color: white;
+        padding: 50px 0;
+        text-align: center;
+    }
+    
+    .testimonial-card {
+        background: white;
+        color: #333;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+    }
+
+    .testimonial-card:hover {
+        transform: scale(1.05);
+    }
+
+    .testimonial-text {
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+
+    .testimonial-author {
+        font-weight: bold;
+        margin-top: 10px;
+        color: #007bff;
+    }
+</style>
+
+
+<section class="testimonials">
+<div class="container">
+    <h2 class="fw-bold text-black">What Our Patients Say ❤️</h2>
+    <p class="fs-5 text-black">Real experiences from patients who trust us with their health.</p>
+    
+    <div class="row mt-4">
+        <div class="col-md-6 mb-3">
+            <div class="testimonial-card p-4">
+                <p class="testimonial-text">"Booking was super easy! Got an appointment with Dr. Priya in minutes."</p>
+                <p class="testimonial-author">– Amit K.</p>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="testimonial-card p-4">
+                <p class="testimonial-text">"The doctors are excellent, and the process is hassle-free."</p>
+                <p class="testimonial-author">– Neha S.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+<style>
+    /* Styling for the guidelines section */
+    .guidelines {
+        background: #f8f9fa;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .guideline-card {
+        background: white;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: 0.3s ease-in-out;
+    }
+
+    .guideline-card:hover {
+        transform: scale(1.05);
+    }
+
+    .guideline-icon {
+        font-size: 2rem;
+        color: #007bff;
+        margin-bottom: 15px;
+    }
+
+    .guideline-text {
+        font-size: 1.1rem;
+    }
+
+    .guideline-title {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #007bff;
+    }
+</style>
+
+
+<section class="guidelines">
+<div class="container">
+    <h2 class="fw-bold text-primary">📋 Appointment Guidelines</h2>
+    <p class="fs-5">Follow these simple steps to ensure a smooth and hassle-free appointment experience.</p>
+
+    <div class="row mt-4">
+        <div class="col-md-4 mb-3">
+            <div class="guideline-card p-4">
+                <i class="fas fa-file-medical guideline-icon"></i>
+                <p class="guideline-title">Things to Bring</p>
+                <p class="guideline-text">Previous reports, insurance details, and ID proof.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="guideline-card p-4">
+                <i class="fas fa-clock guideline-icon"></i>
+                <p class="guideline-title">Check-in Process</p>
+                <p class="guideline-text">Arrive 15 minutes before the appointment for smooth processing.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="guideline-card p-4">
+                <i class="fas fa-calendar-times guideline-icon"></i>
+                <p class="guideline-title">Cancellation Policy</p>
+                <p class="guideline-text">Reschedule or cancel up to 24 hours before your appointment.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<style>
+    /* Emergency Section Styling */
+    .emergency {
+        background: linear-gradient(135deg, #eff2f3, #6db3ec);
+        color: white;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    
+
+    .emergency-icon {
+        font-size: 2.5rem;
+        color: #007bff;
+        margin-bottom: 15px;
+    }
+
+    .emergency-text {
+        font-size: 1.2rem;
+    }
+
+    .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.emergency-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    background: white;
+    color: #333;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+    min-height: 200px; 
+    height: 60%; 
+}
+
+.emergency-card:hover {
+    transform: scale(1.05);
+}
+
+.highlight {
+    font-weight: bold;
+    color: #007bff;
+    min-height: 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;      
+}
+
+</style>
+
+
+<section class="emergency">
+<div class="container">
+    <h2 class="fw-bold text-primary">🚑 Emergency Contact & Support</h2>
+    <p class="fs-5 text-black">In case of medical emergencies, reach out to us immediately.</p>
+
+    <div class="row mt-4 justify-content-center">
+        <div class="col-md-4 mb-3">
+            <div class="emergency-card p-4 text-center">
+                <i class="fas fa-phone-alt emergency-icon"></i>
+                <p class="highlight">Helpline</p>
+                <p class="emergency-text">📞 +91 XXXXX XXXXX</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="emergency-card p-4 text-center">
+                <i class="fas fa-envelope emergency-icon"></i>
+                <p class="highlight">Email</p>
+                <p class="emergency-text">📧 medicalcare@hospital.com</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="emergency-card p-4 text-center">
+                <i class="fas fa-map-marker-alt emergency-icon"></i>
+                <p class="highlight">Address</p>
+                <p class="emergency-text">🏥 MedicalCare Hospital, 123 Green Ave, Near Central Mall, New Delhi - 110001, India.</p>
+            </div>
+        </div>
+    </div>
+
+    <p class="fs-5 mt-4">⚠️ <strong>For urgent medical help, visit our <span class="highlight">Emergency Department</span> open 24/7.</strong></p>
+</div>
+</section>
+
+
+
+<style>
+    /* Benefits Section Styling */
+    .benefits-section {
+        background: #ffffff; /* White Background */
+        padding: 60px 0;
+        text-align: center;
+        color: #333;
+    }
+
+    .benefits-section h2 {
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #0056b3; /* Dark Blue */
+    }
+
+    .benefit-card {
+        background: #f8f9fa; /* Light Gray Card */
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: 0.3s ease-in-out;
+    }
+
+    .benefit-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .benefit-icon {
+        font-size: 2.5rem;
+        color: #0056b3;
+        margin-bottom: 15px;
+    }
+
+    .benefit-text {
+        font-size: 1.1rem;
+    }
+
+</style>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<section class="benefits-section">
+<div class="container">
+    <h2 class="text-primary">📅 Why Book an Appointment?</h2>
+    <p class="fs-5">Enjoy hassle-free healthcare with expert doctors and priority consultation.</p>
+
+    <div class="row mt-4">
+        <div class="col-md-3 mb-3">
+            <div class="benefit-card p-4 text-center">
+                <i class="fas fa-clock benefit-icon"></i>
+                <p class="fw-bold">Avoid Long Queues</p>
+                <p class="benefit-text">Get priority consultation without waiting in long lines.</p>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="benefit-card p-4 text-center">
+                <i class="fas fa-user-md benefit-icon"></i>
+                <p class="fw-bold">Expert Doctors</p>
+                <p class="benefit-text">Choose from top specialists in various fields.</p>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="benefit-card p-4 text-center">
+                <i class="fas fa-calendar-alt benefit-icon"></i>
+                <p class="fw-bold">Convenient Timing</p>
+                <p class="benefit-text">Book appointments that fit your schedule.</p>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="benefit-card p-4 text-center">
+                <i class="fas fa-heart benefit-icon"></i>
+                <p class="fw-bold">Personalized Care</p>
+                <p class="benefit-text">Get one-on-one attention from healthcare professionals.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+<style>
+    .footer {
+        background: linear-gradient(135deg, #eff2f3, #6db3ec);
+        color: black;
+        padding: 20px 0;
+    }
+
+    .footer a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+        font-size: 20px;
+    }
+
+     .social-icons a:hover {
+        color: #004080 !important; 
+    }
+</style>
+
+<footer class="footer text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>About Us</h5>
+                <p>Providing quality healthcare with advanced facilities and experienced staff.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Doctors.html">Doctors</a></li>
+                    <li><a href="Appointment.html">Appointment</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Contact Us</h5>
+                <p>Email: contact@hospital.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: MedicalCare Hospital, 123 Green Ave, Near Central Mall, New Delhi - 110001, India.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="text-black"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-black"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-black"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-black"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-3" style="border-color: black;">
+        <p class="mb-0">&copy; 2025 Hospital Management System. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
